@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .mainContainer {
+            flex: 1;
+        }
+        .footerContainer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="headerContainer">      
+        <div class="headerLogo"></div>     
+    </header>
+    
+    <section class='sectionContainer'>
+          <div class="opacity"></div>
+          <div class="sectionContent">
+            <div class="text">
+              <p class="text-justify">Dance is more than mere movement; it's a universal language that transcends borders and cultures. It's the purest expression of the soul, where each step tells a story and every gesture evokes an emotion.</p>
+              <p class="text-justify">In dance, we find freedom and discipline in equal measure. It's a delicate balance between technique and improvisation, where each movement is carefully choreographed, yet we also leave room for the inspiration of the moment.</p>
+              <p class="text-justify">Through dance, we connect not only with our own bodies but also with the world around us. It's a form of communication without words, where we can convey feelings that go beyond what words can express.</p>
+              <p class="text-justify">In dance, we find beauty in the simplicity of an arabesque, the strength of a leap, and the grace of a fluid movement. Each step is a journey, an opportunity to express ourselves fully and connect with our deepest essence.</p>
+              <p class="text-justify">Whether on the stage of a theater, in the intimacy of a classroom, or on the pulsating rhythm of a dance floor, dance invites us to surrender completely to the present moment and celebrate the beauty of life in motion.</p>
+              <p class="text-justify">May each step be a celebration of life, an expression of love, and a manifestation of our purest essence. In dance, we find the true essence of our humanity.</p>
+            </div>
+          </div>
+    </section>
+    
+    <main class="mainContainer">
+        
+        <div class="container modalContainer">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <!-- Modal 1 -->
+                <div class="card">
+                  <img src="./Assets/img/Performance.jpg" class="card-img-top" alt="Imagem Modal 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Health & Performance</h5>
+                    <p class="card-text">Discover the intersection of health and peak performance in this dynamic class. Learn how to optimize both body and mind to achieve your personal best. From exercise to nutrition to mental strategies, explore the tools for maximizing your performance in all aspects of life.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Access Tab</button>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-6 mb-4">
+                <!-- Modal 2 -->
+                <div class="card">
+                  <img src="./Assets/img/hiphop.jpg" class="card-img-top" alt="Dance" style="object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">Dance</h5>
+                    <p class="card-text">
+                        In this class, immerse yourself in the joy of movement. Explore various dance styles to boost fitness and coordination. No matter your level, let the music inspire you to express yourself and feel alive.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Access Tab</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                  
+    </main>
+
+    <footer class="footerContainer">
+        <div class="footerText">Copyright © 2024 Juan Fonte</div>
+    </footer>
+
+    <script src="./Scripts/bootstrap.min.js"></script>
+</body>
+</html>
